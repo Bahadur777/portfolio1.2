@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
-import './globals.css'
+import '../css/prism.css'
+import  '../css/tailwind.css'
 import Header from '@/components/Header'
 
 
