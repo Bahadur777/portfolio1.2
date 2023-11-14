@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import classNames from 'classnames';
 import NavHeaderLink from './content/NavHeaderLink'
 import Link from 'next/link';
@@ -8,6 +8,7 @@ import CommandPalette from './CommandPalette/CommandPalette';
 import MobileNav from './MobileNav';
 import SectionContainer from './SectionContainer';
 import ThemeSwitch from './ThemeSwitch';
+import Logo from '../public/static/images/Bahadur.png'
 
 export default function Header() {
   const pathName = usePathname();
@@ -20,14 +21,11 @@ export default function Header() {
             <Link
               href="/"
               className={classNames(
-                'horizontal-underline hidden text-3xl font-extrabold sm:block',
-                {
-                  'horizontal-underline-active': pathName === '/',
-                }
+                
               )}
               aria-label="d."
             >
-              B.
+            {/* <Image src={Logo} alt="titile"  /> */}
             </Link>
           </div>
           <div className="flex items-center space-x-3 text-base leading-5">

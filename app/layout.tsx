@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import '../css/prism.css'
 import  '../css/tailwind.css'
 import Header from '@/components/Header'
+import LenisProvider from '@/components/Providers/LenisProvider'
 
 
 export const metadata: Metadata = {
@@ -20,7 +21,11 @@ export default function RootLayout({
       </head>
       <body>
         <Header/>
-        {children}
+        <LenisProvider>
+       <main>
+       {children}
+       </main>
+        </LenisProvider>
       </body>
     </html>
   )
