@@ -25,7 +25,7 @@ export default function Header() {
               )}
               aria-label="d."
             >
-            {/* <Image src={Logo} alt="titile"  /> */}
+             <Image src={Logo} alt="titile" className='w-48' />
             </Link>
           </div>
           <div className="flex items-center space-x-3 text-base leading-5">
