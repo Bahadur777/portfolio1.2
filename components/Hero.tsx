@@ -1,10 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Link from 'next/link';
 import { useContext, useEffect, useRef } from 'react';
 import { HiOutlineArrowNarrowDown } from 'react-icons/hi';
-import { ScrollContext } from './Providers/ScrollProvider';
+import { ScrollContext } from './providers/ScrollProvider';
 import { renderCanvas } from './renderCanvas';
 
 const  Hero = () => {
@@ -28,18 +27,12 @@ const  Hero = () => {
         <div className="mx-auto w-screen max-w-3xl px-4 sm:px-9 xl:max-w-5xl xl:px-0">
           <div className="-mt-36">
             <div ref={ref} className="flex cursor-default flex-col space-y-2">
-              <h1 className="text-5xl font-semibold sm:text-7xl md:text-8xl xl:text-7xl">
-                Bahadur Mia Shihab (Bms)
+              <h1 className="text-5xl font-semibold sm:text-7xl md:text-8xl xl:text-9xl">
+                Bahadur mia shihab
               </h1>
-              <h2 className="text-3xl font-medium opacity-80 sm:text-6xl md:text-6xl xl:text-5xl">
-                A front-end Developer
+              <h2 className="text-3xl font-medium opacity-80 sm:text-6xl md:text-6xl xl:text-7xl">
+                A Front-end Developer.
               </h2>
-              <Link
-                href="/about"
-                className="underline-magical text-md w-max cursor-pointer sm:text-lg md:text-xl xl:text-2xl"
-              >
-                Read more about me &rarr;
-              </Link>
             </div>
             <motion.div
               animate={{

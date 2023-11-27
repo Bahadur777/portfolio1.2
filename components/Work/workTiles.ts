@@ -10,37 +10,37 @@ export type WorkTile = {
 
 export const workTiles: WorkTile[] = [
   {
-    description: `Here are things`,
-    title: `I've worked on`,
+    description: `I've worked on`,
+    title: `Handy Hub`,
     image: {
-      src: '/static/images/aphex-apps.webp',
+      src: '/static/images/handyHub.jpeg',
       width: 600,
       height: 770,
     },
   },
   {
-    description: 'I built',
-    title: 'Aphex Field',
+    description: "I've created",
+    title: 'Image Gallery',
     image: {
-      src: '/static/images/field-app.webp',
+      src: '/static/images/ImageGallery.jpeg',
       width: 600,
       height: 554,
     },
   },
   {
-    description: `I maintained`,
-    title: 'Aphex Planner',
+    description: `I've pair Programmed on`,
+    title: 'Project Anniverse',
     image: {
-      src: '/static/images/planner-app.webp',
+      src: '/static/images/ProjectAnniverse.jpeg',
       width: 600,
       height: 717,
     },
   },
   {
-    description: `I built`,
-    title: 'Aphex Publication',
+    description: `I've created`,
+    title: 'SpaceX',
     image: {
-      src: '/static/images/publication-app.webp',
+      src: '/static/images/Spacex.jpeg',
       width: 600,
       height: 717,
     },

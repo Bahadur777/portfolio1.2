@@ -1,9 +1,10 @@
-import type { Metadata } from 'next'
-import '../css/prism.css'
-import  '../css/tailwind.css'
-import Header from '@/components/Header'
-import LenisProvider from '@/components/Providers/LenisProvider'
+import '@/css/prism.css';
+import '@/css/tailwind.css';
+import '@fontsource/mukta';
 
+import type { Metadata } from 'next'
+import Header from '@/components/Header'
+import LenisProvider from '@/components/providers/LenisProvider'
 
 export const metadata: Metadata = {
   title: "BMS's Portfolio",
@@ -20,12 +21,16 @@ export default function RootLayout({
       <head>
       </head>
       <body>
-        <Header/>
-        <LenisProvider>
-       <main>
-       {children}
-       </main>
-        </LenisProvider>
+        {/* <ThemeProvider attribute='class' defaultTheme='dark' enableSystem > */}
+
+          <Header />
+          <LenisProvider >
+            <main>
+              {children}
+            </main>
+          </LenisProvider>
+
+        {/* </ThemeProvider> */}
       </body>
     </html>
   )

@@ -8,9 +8,8 @@ import usePaletteOptions from './usePaletteOptions';
 export default function CommandPalette() {
   const [open, setOpen] = useState(false);
 
-  const { pageOptions, blogOptions, generalOptions } = usePaletteOptions();
+  const { pageOptions, generalOptions } = usePaletteOptions();
 
-  // Toggle the menu when ⌘K is pressed
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
       if (e.key === 'k' && e.metaKey) {
@@ -55,7 +54,7 @@ export default function CommandPalette() {
             ))}
           </Command.Group>
 
-          <Command.Group heading="Blogs">
+          {/* <Command.Group heading="Blogs">
             {blogOptions.map(({ id, name, onSelect, icon }) => (
               <CommandItem
                 id={id}
@@ -66,18 +65,9 @@ export default function CommandPalette() {
                 onSelect={onSelect}
               />
             ))}
-          </Command.Group>
+          </Command.Group> */}
         </Command.List>
       </Command.Dialog>
-      {/* <motion.button
-        onClick={() => setOpen(true)}
-        aria-label="Open command palette"
-        type="button"
-        className="hidden h-8 w-8 rounded p-1 sm:block"
-        whileHover={{ scale: 1.2 }}
-      >
-        <TbCommand size={22} className="ext-gray-100" />
-      </motion.button> */}
     </>
   );
 }

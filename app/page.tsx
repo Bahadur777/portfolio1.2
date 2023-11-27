@@ -1,14 +1,15 @@
 import Hero from '@/components/Hero'
-import Work from '@/components/Work/Works'
-import { ScrollProvider } from '@/components/Providers/ScrollProvider'
-
-export default function Home() {
+import Works from '@/components/Work/Works'
+import { ScrollProvider } from '@/components/providers/ScrollProvider';
+import About from '@/components/About/About';
+const Home =() => {
   return (
-    
-       <ScrollProvider>
-       <Hero />
-        <Work/>
-       </ScrollProvider>
-    
+    <ScrollProvider>
+      <Hero />
+      <About />
+      <Works />
+    </ScrollProvider>
   )
 }
+
+export default Home;

@@ -1,7 +1,7 @@
 'use client';
 
 import classNames from 'classnames';
-import NavHeaderLink from './../components/content/NavHeaderLink';
+import headerNavLinks from '@/content/headerNavLinks';
 import { AnimatePresence, motion } from 'framer-motion';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -18,7 +18,6 @@ export default function MobileNav() {
 
   useEffect(() => {
     if (navShow) {
-      // Prevent scrolling
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'auto';
@@ -92,7 +91,7 @@ export default function MobileNav() {
                 Home
               </Link>
             </div>
-            {NavHeaderLink.map(({ title, href }) => {
+            {headerNavLinks.map(({ title, href }) => {
               const active = pathName?.includes(href);
 
               return (

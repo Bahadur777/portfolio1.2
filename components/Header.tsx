@@ -1,14 +1,15 @@
-'use client';
-import Image from 'next/image';
-import classNames from 'classnames';
-import NavHeaderLink from './content/NavHeaderLink'
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import CommandPalette from './CommandPalette/CommandPalette';
-import MobileNav from './MobileNav';
-import SectionContainer from './SectionContainer';
-import ThemeSwitch from './ThemeSwitch';
-import Logo from '../public/static/images/Bahadur.png'
+"use client";
+
+import classNames from "classnames";
+import headerNavLinks from "@/content/headerNavLinks";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import CommandPalette from "./CommandPalette/CommandPalette";
+import MobileNav from "./MobileNav";
+import SectionContainer from "./SectionContainer";
+import ThemeSwitch from "./ThemeSwitch";
+import Logo from "../public/static/images/Bahadur.png";
+import Image from "next/image";
 
 export default function Header() {
   const pathName = usePathname();
@@ -20,25 +21,24 @@ export default function Header() {
           <div>
             <Link
               href="/"
-              className={classNames(
-                
-              )}
-              aria-label="d."
+              className={classNames("", {
+                "horizontal-underline-active": pathName === "/",
+              })}
             >
-             <Image src={Logo} alt="titile" className='w-48' />
+              <Image src={Logo} width={200} height={200} />
             </Link>
           </div>
           <div className="flex items-center space-x-3 text-base leading-5">
             <div className="hidden space-x-5 sm:flex">
-              {NavHeaderLink.map(({ title, href }) => {
+              {headerNavLinks.map(({ title, href }) => {
                 const active = pathName?.includes(href);
                 return (
                   <Link
                     prefetch
                     key={title}
                     href={href}
-                    className={classNames('horizontal-underline text-base', {
-                      'horizontal-underline-active': active,
+                    className={classNames("horizontal-underline text-base", {
+                      "horizontal-underline-active": active,
                     })}
                     aria-label={title}
                   >
