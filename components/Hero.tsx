@@ -27,10 +27,10 @@ const  Hero = () => {
         <div className="mx-auto w-screen max-w-3xl px-4 sm:px-9 xl:max-w-5xl xl:px-0">
           <div className="-mt-36">
             <div ref={ref} className="flex cursor-default flex-col space-y-2">
-              <h1 className="text-5xl font-semibold sm:text-7xl md:text-8xl xl:text-9xl">
+              <h1 className="text-7xl font-semibold sm:text-5xl md:text-7xl xl:text-8xl capitalize">
                 Bahadur mia shihab
               </h1>
-              <h2 className="text-3xl font-medium opacity-80 sm:text-6xl md:text-6xl xl:text-7xl">
+              <h2 className="text-3xl font-medium opacity-80 sm:text-4xl md:text-4xl xl:text-5xl">
                 A Front-end Developer.
               </h2>
             </div>
