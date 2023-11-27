@@ -16,7 +16,9 @@ const About = () => {
         real-world problems. Let&apos;s work together to bring your ideas to life!
 
       </p>
-
+          <div className="button-div my-10">
+            <button type="button" className="py-4 px-5 bg-blue-500 rounded uppercase bold ">Download cv</button>
+          </div>
     </div>
   );
 };
