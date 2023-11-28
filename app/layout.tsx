@@ -1,7 +1,6 @@
 import '@/css/prism.css';
 import '@/css/tailwind.css';
 import '@fontsource/mukta';
-
 import type { Metadata } from 'next'
 import Header from '@/components/Header'
 import LenisProvider from '@/components/providers/LenisProvider'

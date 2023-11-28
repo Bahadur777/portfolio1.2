@@ -8,7 +8,7 @@ import { workTiles } from './workTiles';
 
 export default function Works() {
   return (
-    <TileWrapper numOfPages={workTiles.length}>
+    <TileWrapper numOfPages={workTiles.length} >
       <TileBackground>
         <WorkBackground />
       </TileBackground>

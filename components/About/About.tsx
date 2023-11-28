@@ -1,9 +1,10 @@
 import React from "react";
 import { styles } from "./styles";
+import './About.css'
 
 const About = () => {
   return (
-    <div className="mx-auto w-screen max-w-3xl px-4 sm:px-9 xl:max-w-5xl xl:px-0">
+    <div className="mx-auto w-screen max-w-3xl px-4 sm:px-9 xl:max-w-5xl xl:px-0" id="About">
     
       <h1 className="text-[45px] font-bold  uppercase">Introduction</h1>
       <h2 className={styles.sectionHeadText}>Overview.</h2>
@@ -17,7 +18,7 @@ const About = () => {
 
       </p>
           <div className="button-div my-10">
-            <button type="button" className="py-4 px-5 bg-blue-500 rounded uppercase bold ">Download cv</button>
+            <button type="button" className="py-4 px-5 rounded uppercase bold button-btn">Download cv</button>
           </div>
     </div>
   );
