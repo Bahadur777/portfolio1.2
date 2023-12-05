@@ -1,0 +1,86 @@
+#contact{
+    background-color:  #F8AE16;
+}
+.contact-container{
+    width: 90%;
+    margin: 0 auto;
+}
+.container_option{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.option{
+    width: 40%;
+    padding: 2rem;
+    
+}
+.option_card{
+    width: 100%;
+    background: #ffff;
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    transition: var(--transition);
+    color: #000;
+    text-align: center;
+}
+/* .option_card:hover{
+    background-color: var(--tranparent);
+    border: 1px solid var(--color-light);
+} */
+.form_option{
+    width: 60%;
+}
+.Form{
+    width: 100%;
+    padding: 2rem;
+}
+.Form input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border:1px solid var(--color-light);
+    margin-bottom: 0.3rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+   
+}
+.form-btn{
+    width: max-content;
+    display: inline-block;
+    
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    background-color:#ffff;
+    border: none;
+    color: #000;
+    
+}
+.form-btn:hover{
+    background: var(--color-primary);
+    color: var(--color-light);
+    border: 2px solid #ffffff;
+}
+
+
+.trbc{
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    color: #F8AE16;
+}
+@media only screen and (max-width: 768px){
+    .container_option{
+        display: block;
+        flex-direction: row-reverse;
+    }
+    .option{
+        width: 100%;
+        padding: 0;
+    }
+    .form_option{
+        width: 100%;
+    }
+}

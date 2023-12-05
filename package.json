@@ -9,13 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@fontsource/mukta": "5.0.17",
     "@jdion/tilt-react": "^1.0.0",
     "@studio-freight/react-lenis": "0.0.36",
     "classnames": "2.3.2",
     "cmdk": "0.2.0",
     "contentlayer": "^0.3.4",
+    "file-loader": "^6.2.0",
     "framer-motion": "10.16.4",
+    "gsap": "3.12.2",
     "next": "14.0.1",
     "next-themes": "0.2.1",
     "react": "^18",
@@ -27,10 +30,8 @@
     "rehype-prism-plus": "1.6.3",
     "rehype-slug": "6.0.0",
     "remark": "14.0.2",
-    "use-breakpoint": "4.0.1",
-    "gsap": "3.12.2",
-    "file-loader": "^6.2.0",  
-     "url-loader":"^4.1.1"
+    "url-loader": "^4.1.1",
+    "use-breakpoint": "4.0.1"
   },
   "devDependencies": {
     "@tailwindcss/forms": "0.5.6",
