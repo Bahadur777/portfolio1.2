@@ -25,7 +25,7 @@ const Contact = () => {
   return (
     <section id='contact' >
        <div className="contact-container">
-      <h2 className='text-[45px] font-bold  uppercase my-5'>Get in touch</h2>
+      <h2 className='text-[45px] font-bold  uppercase py-5 '>Get in touch</h2>
       <div className="container">
         <div className="container_option">
           <div className="option">
