@@ -4,6 +4,7 @@ import React from "react";
 import { styles } from "./styles";
 import './About.css'
 import resume from './resume/Bahadur.pdf'
+import Tech from '../Tech/Tech'
 
 const About = () => {
   const handleResume=()=>{
@@ -26,6 +27,7 @@ const About = () => {
           <div className="button-div my-10">
             <button type="button" className="py-4 px-5 rounded uppercase bold button-btn" onClick={handleResume} >Download cv</button>
           </div>
+          <Tech/>
     </div>
   );
 };
