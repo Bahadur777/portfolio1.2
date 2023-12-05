@@ -1,8 +1,14 @@
+"use client"
+
 import React from "react";
 import { styles } from "./styles";
 import './About.css'
+import resume from './resume/Bahadur.pdf'
 
 const About = () => {
+  const handleResume=()=>{
+     window.open(resume, "_blank");
+  }
   return (
     <div className="mx-auto w-screen max-w-3xl px-4 sm:px-9 xl:max-w-5xl xl:px-0" id="About">
     
@@ -18,7 +24,7 @@ const About = () => {
 
       </p>
           <div className="button-div my-10">
-            <button type="button" className="py-4 px-5 rounded uppercase bold button-btn">Download cv</button>
+            <button type="button" className="py-4 px-5 rounded uppercase bold button-btn" onClick={handleResume} >Download cv</button>
           </div>
     </div>
   );
